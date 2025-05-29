@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TABLAS</title>
+</head>
+<body background="img/fondo.jpg">
+<script>
+	function multi(){
+	var numero = document.getElementById('numero').value;
+            var resultado = '';
+ 
+            for (var i = 1; i <= 10; i++) {
+                resultado += numero + ' x ' + i + ' = ' + (numero * i) + '<br>';
+            }
+ 
+            document.getElementById('resultado').innerHTML = resultado;
+        }
+	
+</script>
+<div align="center">
+<h1><b>TABLAS DE MULTIPLICAR</b></h1>
+</div>
+<div align="center">
+<label for="num">Intoduce un número:</label>
+<input type="text" name="" id="numero">
+
+<button onclick="multi()">MULTIPLICACION</button><br>
+<div id="resultado"></div>
+
+
+
+</body>
+</html>
